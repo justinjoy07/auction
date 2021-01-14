@@ -16,11 +16,10 @@ import requests
 
 url = "http://localhost:8000/list"
 
-payload="{\"bidder_id\": \"1\"}"
-
-response = requests.request("GET", url, headers=headers, data=payload)
+response = requests.request("GET", url, headers=headers)
 
 print(response.text)
+
 
 
 #Run auction
