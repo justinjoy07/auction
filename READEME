@@ -28,6 +28,6 @@ url = "http://localhost:8000/auction"
 
 payload="{\"auction_id\": \"qwertyu\"}"
 
-response = requests.request("POST", url, headers=headers, data=payload)
+response = requests.request("POST", url, data=payload)
 
 print(response.text, response.status_code)
